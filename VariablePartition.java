@@ -7,13 +7,11 @@ public class VariablePartition {
         WORST_FIT, CIRCULAR_FIT
     }
 
-    private final int totalSize;
     private final Policy policy;
     private final List<Block> memory;
     private int circularIndex;
 
     public VariablePartition(int totalSize, Policy policy) {
-        this.totalSize = totalSize;
         this.policy = policy;
         this.memory = new ArrayList<>();
         this.circularIndex = 0;
