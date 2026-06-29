@@ -170,7 +170,6 @@ public class BuddySystem {
 
     public void printState() {
         System.out.println(" Estado da memória (Buddy System):");
-        System.out.println(" " + "=".repeat(65));
 
         List<BuddyBlock> all = new ArrayList<>();
         for (List<BuddyBlock> list : freeLists.values())
@@ -193,10 +192,8 @@ public class BuddySystem {
                 internalFrag += frag;
             }
         }
-
-        System.out.println(" " + "-".repeat(65));
+        
         System.out.println(" Blocos contíguos livres: " + freeBlocks + " | Total livre: " + freeTotal + " KB");
         System.out.println(" Fragmentação interna total: " + internalFrag + " KB");
-        System.out.println(" " + "=".repeat(65));
     }
 }
